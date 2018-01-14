@@ -1,0 +1,135 @@
+/*::-webkit-scrollbar {*/
+    /*display: none;*/
+/*}*/
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: grey;
+    margin: auto auto;
+    width: 100%;
+    /*max-width: 1400px;*/
+    height: 10000px;
+}
+.sidebar{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    /*border: 5px solid grey;*/
+}
+.data{
+    width: 100%;
+    height: 98%;
+    background-color: black;
+    max-width: 10000px;
+    overflow-y: auto;
+}
+.profile, .resume, .education, .interest, .contact{
+    height: 100%;
+    background-color: white;
+    border: 5px solid black;
+
+}
+.sidebar>div>a>img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 100px auto;
+    border: 5px solid white;
+}
+.sidebar>div>a>p{
+    color: white;
+    text-align: center;
+    font-size: 300%;
+}
+.sidebar>div>a>p:hover{
+    color: darkslategray;
+}
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+
+    .sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 4%;
+        position: relative;
+    }
+
+    .pic {
+        width: 33%;
+        height: 100%;
+        background-color: white;
+        order: 2;
+    }
+
+    .first2{
+        width: 33%;
+        height: 100%;
+        order: 1;
+    }
+    .lastthree{
+        width: 34%;
+        height: 100%;
+        order: 3;
+    }
+    .first2>div{
+        width: 100%;
+        height: 50%;
+    }
+    .lastthree>div{
+        width: 100%;
+        height: 33.33%;
+    }
+    .data{
+        height: 96%;
+        width: 100%;
+    }
+
+}
+    /*.sidebar>div>a>img{*/
+        /*width: 33%;*/
+        /*margin: 100px auto;*/
+        /*margin-top: 40px ;*/
+
+    /*}*/
+
+
+    /*.data{*/
+        /*height: 96%;*/
+    /*}*/
+
+@media screen and (min-width: 1100px){
+   .container{
+       height: 1000px;
+       justify-content: left;
+       background-color: black;
+   }
+    .sidebar{
+        height: 100%;
+        width: 20%;
+        margin-right: 10px;
+    }
+    .sidebar>div>a>img{
+        width: 100%;
+    }
+    .data{
+        width: 77.75%;
+        max-height: 100%;
+        margin-top: 10px;
+        padding: 0px;
+        overflow-y: auto;
+        max-width: 1000px;
+        overflow-y: auto;
+    }
+    .profile, .resume, .education, .interest, .contact {
+        height: 1400px;
+    }
+}
